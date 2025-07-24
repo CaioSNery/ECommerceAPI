@@ -17,6 +17,8 @@ namespace ECommerceAPI.Entities
         public string Telefone { get; set; }
         public string Endereco { get; set; }
 
+        public DateTime DataCadastro { get; set; }
+
         public ICollection<Pedido> Pedidos { get; set; } = new List<Pedido>();
         public ICollection<Carrinho> Carrinhos { get; set; } = new List<Carrinho>();
 
