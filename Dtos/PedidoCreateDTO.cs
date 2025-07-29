@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.Dtos
 {
-    public class PedidoDTO
+    public class PedidoCreateDTO
     {
         public int Id { get; set; }
         public DateTime DataPedido { get; set; }

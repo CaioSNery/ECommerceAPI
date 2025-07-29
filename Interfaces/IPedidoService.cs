@@ -8,10 +8,10 @@ namespace ECommerceAPI.Interfaces
 {
     public interface IPedidoService
     {
-        Task<IEnumerable<PedidoDTO>> ListarPedidosAsync();
-        Task<PedidoDTO> CriarPedidoAsync(PedidoDTO pedidoDTO);
-        Task<PedidoDTO> BuscarPedidoByIdAsync(int id);
-        Task<bool> UpdatePedidoAsync(int id, PedidoDTO pedidoUpdateDTO);
+        Task<IEnumerable<PedidoCreateDTO>> ListarPedidosAsync();
+        Task<PedidoCreateDTO> CriarPedidoAsync(PedidoCreateDTO pedidoDTO);
+        Task<PedidoCreateDTO> BuscarPedidoByIdAsync(int id);
+        Task<bool> UpdatePedidoAsync(int id, PedidoCreateDTO pedidoUpdateDTO);
         Task<bool> DeletePedidoAsync(int id);
     }
 }

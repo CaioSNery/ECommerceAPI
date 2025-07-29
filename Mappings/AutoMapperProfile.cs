@@ -12,11 +12,24 @@ namespace ECommerceAPI.Mappings
     {
         public AutoMapperProfile()
         {
-            CreateMap<Produto, ProdutoCreateDTO>().ReverseMap();
+
+
+
+            CreateMap<Produto, ProdutoReadDTO>().ReverseMap();
+            CreateMap<ProdutoCreateDTO, Produto>().ReverseMap();
+
+
             CreateMap<Categoria, CategoriaDTO>().ReverseMap();
-            CreateMap<Cliente, ClienteCreateDTO>().ReverseMap();
-            CreateMap<Pedido, PedidoDTO>().ReverseMap();
-            CreateMap<Carrinho, CarrinhoDTO>().ReverseMap();
+            CreateMap<CategoriaCreateDTO, Categoria>().ReverseMap();
+
+
+            CreateMap<Cliente, ClienteReadDTO>().ReverseMap();
+            CreateMap<ClienteCreateDTO, Cliente>().ReverseMap();
+
+            
+            CreateMap<PedidoCreateDTO, Pedido>().ReverseMap();
+
+            CreateMap<CarrinhoDTO, Carrinho>().ReverseMap();
             
 
         }

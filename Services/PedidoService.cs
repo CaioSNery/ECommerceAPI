@@ -23,23 +23,23 @@ namespace ECommerceAPI.Services
             _mapper = mapper;
         }
 
-        public async Task<PedidoDTO> BuscarPedidoByIdAsync(int id)
+        public async Task<PedidoCreateDTO> BuscarPedidoByIdAsync(int id)
         {
             var pedido = await _context.Pedidos.FindAsync(id);
             if (pedido == null)
             {
                 return null;
             }
-            return _mapper.Map<PedidoDTO>(pedido);
+            return _mapper.Map<PedidoCreateDTO>(pedido);
             
         }
 
-        public async Task<PedidoDTO> CriarPedidoAsync(PedidoDTO pedidoDTO)
+        public async Task<PedidoCreateDTO> CriarPedidoAsync(PedidoCreateDTO pedidoDTO)
         {
             var pedido = _mapper.Map<Pedido>(pedidoDTO);
             _context.Pedidos.Add(pedido);
             await _context.SaveChangesAsync();
-            return _mapper.Map<PedidoDTO>(pedido);
+            return _mapper.Map<PedidoCreateDTO>(pedido);
             
         }
 
@@ -52,14 +52,14 @@ namespace ECommerceAPI.Services
             return true;
         }
 
-        public async Task<IEnumerable<PedidoDTO>> ListarPedidosAsync()
+        public async Task<IEnumerable<PedidoCreateDTO>> ListarPedidosAsync()
         {
             var pedidos = await _context.Pedidos.ToListAsync();
-            return _mapper.Map<IEnumerable<PedidoDTO>>(pedidos);
+            return _mapper.Map<IEnumerable<PedidoCreateDTO>>(pedidos);
             
         }
 
-        public async Task<bool> UpdatePedidoAsync(int id, PedidoDTO pedidoUpdateDTO)
+        public async Task<bool> UpdatePedidoAsync(int id, PedidoCreateDTO pedidoUpdateDTO)
         {
             var pedido = await _context.Pedidos.FindAsync(id);
             if (pedido == null) return false;

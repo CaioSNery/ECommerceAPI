@@ -7,6 +7,6 @@ namespace ECommerceAPI.Dtos
 {
     public class CategoriaCreateDTO
     {
-        public string Nome { get; set; }
+        public string Descricao { get; set; }
     }
 }

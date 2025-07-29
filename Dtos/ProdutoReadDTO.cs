@@ -9,7 +9,7 @@ namespace ECommerceAPI.Dtos
     {
     public int Id { get; set; }
     public string Nome { get; set; }
-    public decimal Preco { get; set; }
-    public string NomeCategoria { get; set; }
+    public decimal PrecoVenda { get; set; }
+    public int CategoriaId { get; set; }
     }
 }

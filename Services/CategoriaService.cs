@@ -29,7 +29,7 @@ namespace ECommerceAPI.Services
             {
                 return false;
             }
-            categoria.Nome = dto.Nome;
+            categoria.Descricao = dto.Descricao;
 
             await _context.SaveChangesAsync();
             return true;

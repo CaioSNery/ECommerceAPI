@@ -130,6 +130,7 @@ C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.AssemblyInfo
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.csproj.CoreCompileInputs.cache
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.sourcelink.json
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\staticwebassets\msbuild.ECommerceAPI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -144,4 +145,3 @@ C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\refint\ECommerceAPI.dll
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.pdb
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.genruntimeconfig.cache
 C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ref\ECommerceAPI.dll
-C:\Projetos\ECommerceAPI\ECommerceAPI\obj\Debug\net8.0\ECommerceAPI.sourcelink.json

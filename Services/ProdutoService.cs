@@ -31,8 +31,8 @@ namespace ECommerceAPI.Services
                 return false;
             }
             produto.Nome = dto.Nome;
-            produto.PrecoVenda = dto.Preco;
-            produto.Quantidade = dto.Estoque;
+            produto.PrecoVenda = dto.PrecoVenda;
+            produto.Quantidade = dto.Quantidade;
             produto.CategoriaId = dto.CategoriaId;
 
             _context.Produtos.Update(produto);

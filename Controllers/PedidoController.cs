@@ -37,7 +37,7 @@ namespace ECommerceAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CriarPedido([FromBody] PedidoDTO pedidoDTO)
+        public async Task<IActionResult> CriarPedido([FromBody] PedidoCreateDTO pedidoDTO)
         {
             if (pedidoDTO == null)
             {
@@ -47,7 +47,7 @@ namespace ECommerceAPI.Controllers
             return CreatedAtAction(nameof(BuscarPedidoById), new { id = pedido.Id}, pedido);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdatePedido(int id, [FromBody] PedidoDTO pedidoUpdateDTO)
+        public async Task<IActionResult> UpdatePedido(int id, [FromBody] PedidoCreateDTO pedidoUpdateDTO)
         {
             if (pedidoUpdateDTO == null)
             {
